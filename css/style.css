@@ -1,0 +1,327 @@
+/* fundo #0d0d0df0; preto */
+
+body.lightOff{
+    background-color:#0d0d0df0;
+}
+
+header.cabecalho{
+    width: 100%;
+    height: 90px;
+    box-shadow: 0px 1px 20px #d9443684 ;
+    background-color: #0D0D0D;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+header.cabecalho .cabecalhoContainer{
+    margin: 0 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+img.logo{
+   width: 200px;
+   height: 65px; 
+   
+}
+
+
+header.cabecalho nav ul{ 
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+header.cabecalho nav ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #D94436;
+    
+}
+
+header.cabecalho nav ul li a:hover{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header.cabecalho nav ul li.todos{
+    font-weight: bold;
+}
+
+
+
+.container{
+    display: flex;
+    justify-items: end;
+    margin: 0 115px;
+    gap: 10px;
+
+}
+
+main{
+    margin-top: 126px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+main ul li.card{
+    width: 296px;
+    height: 408px;
+    background-color: #f1eeee;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    overflow: hidden;    
+}
+
+main ul li.card:hover{
+    border: 2px solid #D94436;
+    transition: 0.5s;
+    box-shadow: 0px 1px 20px #d9443684;
+  
+}
+
+main ul li.card figure{
+    width: 296px;
+    height: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d28;
+      
+}
+
+main ul li.card figure:hover{
+    filter: brightness(1.5);
+    
+}
+
+main ul li.card figure img{
+   width: 296px;
+   height: 174px;
+   object-fit: cover; 
+  
+}
+
+
+main ul li p.categoria{
+    margin: 12px 0px 0px 15px;
+    width: 8vw;
+    height: 15px;
+    background-color: #D94436;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+main ul li h3.title{
+    margin: 15px 0px 0px 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main ul li p.description{
+    margin: 20px 0px 0px 15px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+main ul li p.valueProduct{
+    margin: 15px 0px 0px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main ul li button.compra{
+    margin: 10px 0px 15px 15px;
+    text-align: left;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline transparent;
+}
+
+main ul li button.compra:hover{
+    cursor: pointer;
+    color: #D94436;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 126px;
+}
+
+aside form{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}
+
+aside form input{
+    width: 256px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color:  #f1eeee;
+    font-weight: bold;
+    
+}
+aside form input:focus{
+    background-color: #F2CDC4;
+    color:#0D0D0D;
+    font-weight: bold;
+    
+}
+
+aside form button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0D0D0D;
+    color: #D94436;
+}
+
+aside form button:hover {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #D94436;
+    color: #0D0D0D;
+}
+
+
+
+aside section h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 370px;
+    height: 50px;
+    text-align: center;
+    color: #f1eeee;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #591B1B;
+}
+
+aside section .carrinhoCompra{
+    width: 370px;
+    height: 329px;
+    background-color: #f1eeee;
+    overflow-y: auto;
+}
+
+
+
+section ul li.cardCarrinhoCompra{
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+
+section ul li.cardCarrinhoCompra figure{
+    display: flex;
+    justify-content: center;
+    width: 128px;
+    height: 114px;
+    overflow: hidden;
+}
+
+section ul li.cardCarrinhoCompra div{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;  
+}
+
+section ul li.cardCarrinhoCompra div h5{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+section ul li.cardCarrinhoCompra div p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+section ul li.cardCarrinhoCompra div button{
+    background-color: transparent;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+section ul li.cardCarrinhoCompra div button:hover{
+    cursor: pointer;
+    color: #D94436;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+aside .total{
+    width: 370px;
+    height: 110px;
+    background-color: #591B1B;
+    
+}
+
+
+aside .total ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 19px;
+    gap: 32px;
+    
+}
+
+aside .total ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .total ul li p.quantidade, p.textTotal{
+    color: #f1eeee;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+aside .total ul li p.quantidadeItens, p.totalValor{
+    color: #f1eeee;
+    font-weight: 400;
+    font-size: 16px;
+}
