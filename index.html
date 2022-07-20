@@ -30,10 +30,11 @@
             </div>
             <nav>
                 <ul>
-                    <li class="todos"><a href="#">Todos</a></li>
-                    <li><a href="#actionFigure">Action Figures</a></li>
-                    <li><a href="#camisetas">Camisetas</a></li>
-                    <li><a href="#decoração">Decoração</a></li>
+                    <li class="todos">Todos</li>
+                    <li class="actionFigure">Action Figures</li>
+                    <li class="camisetas">Camisetas</li>
+                    <li class="decoracao">Decoração</li>
+
                 </ul>
             </nav>
 
@@ -45,8 +46,8 @@
 
     <div class="container">
         <main>
-            <section id="actionFigure">
-                <ul>
+            <section class="sectionPrincipal">
+                <!-- <ul>
                     <li class="card">
                         <figure>
                             <img src="./img/actions/ScorpionMK.png" alt="Estátua do personagem Scorpion do jogo Mortal Kombat 11">
@@ -64,8 +65,7 @@
                         </figure>
                         <p class="categoria">Action Figure</p>
                         <h3 class="title">Sektor</h3>
-                        <p class="description">Figura de ação do perosnagem Sektor do jogo Mortal Kombat. Fabricante:
-                            Storm Collectibles em escala 1/12...</p>
+                        <p class="description">Figura de ação do perosnagem Sektor do jogo Mortal Kombat. Fabricante: Storm Collectibles em escala 1/12...</p>
                         <p class="valueProduct">R$664,50</p>
                         <button class="compra">Adicionar ao carrinho</button>
                     </li>
@@ -91,10 +91,6 @@
                         <p class="valueProduct">R$1.550,00</p>
                         <button class="compra">Adicionar ao carrinho</button>
                     </li>
-                </ul>
-            </section>
-            <section id="decoração">
-                <ul>
                     <li class="card">
                         <figure>
                             <img src="./img/decoracao/GeekAstronauta.png" alt="Quadro com fundo rocho e uma ilustração de um Astronauta comendo Hamburguer ">
@@ -136,14 +132,10 @@
                         <p class="categoria">Decoração</p>
                         <h3 class="title">Rick and Morty</h3>
                         <p class="description">Deixe o seu ambiente preferido ainda mais lindo, com esse quadro da
-                            duplca Rick and Morty...</p>
+                            dupla Rick and Morty...</p>
                         <p class="valueProduct">R$34,99</p>
                         <button class="compra">Adicionar ao carrinho</button>
-                    </li>
-                </ul>
-            </section>
-            <section id="camisetas">
-                <ul>
+                    </li>             
                     <li class="card">
                         <figure>
                             <img src="./img/camisetas/camisa.jpeg" alt="camisa branca com os foras da lei Rick and Morty">
@@ -189,21 +181,20 @@
                         <p class="valueProduct">R$79,99</p>
                         <button class="compra">Adicionar ao carrinho</button>
                     </li>
-                </ul>
+                </ul> -->
             </section>
 
         </main>
         <aside>
-            <form>
-                <input type="text" id="pesquisar" placeholder="     Digite aqui sua pesquisa" maxlength="30">
+            <div class="campoBusca">
+                <input type="text" placeholder="  Digite aqui sua pesquisa" maxlength="30" >
                 <button>Pesquisar</button>
-            </form>
+            </div>
             <section>
                 <h4>Carrinho de Compras</h4>
                 <div class="carrinhoCompra">
-                    <ul>
-                        <li class="cardCarrinhoCompra">
-
+                    <ul class="cardCarrinhoCompra">
+                        <!-- <li>
                             <figure>
                                 <img src="./img/actions/ThommyShelb.png" alt="asd">
                             </figure>
@@ -213,8 +204,6 @@
                                 <button>Remover produto</button>
                             </div>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="cardCarrinhoCompra">
 
                             <figure>
@@ -226,8 +215,6 @@
                                 <button>Remover produto</button>
                             </div>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="cardCarrinhoCompra">
 
                             <figure>
@@ -238,7 +225,7 @@
                                 <p>R$79,99</p>
                                 <button>Remover produto</button>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </section>
@@ -246,11 +233,11 @@
                 <ul>
                     <li>
                         <p class="quantidade">Quantidade: </p>
-                        <p class="quantidadeItens">3</p>
+                        <p class="quantidadeItens">0</p>
                     </li>
                     <li>
                         <p class="textTotal">Total: </p>
-                        <p class="totalValor">R$1.664,98</p>
+                        <p class="totalValor">R$0,00</p>
                     </li>
                 </ul>
             </div>

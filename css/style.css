@@ -4,6 +4,9 @@ body.lightOff{
     background-color:#0d0d0df0;
 }
 
+
+
+
 header.cabecalho{
     width: 100%;
     height: 90px;
@@ -36,14 +39,14 @@ header.cabecalho nav ul{
     gap: 25px;
     
 }
-header.cabecalho nav ul li a{
+header.cabecalho nav ul li{
     font-size: 16px;
     font-weight: 400;
     color: #D94436;
     
 }
 
-header.cabecalho nav ul li a:hover{
+header.cabecalho nav ul li:hover{
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
@@ -54,7 +57,6 @@ header.cabecalho nav ul li a:hover{
 header.cabecalho nav ul li.todos{
     font-weight: bold;
 }
-
 
 
 .container{
@@ -71,9 +73,12 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 25px;
+  
+    
 }
 
 main ul{
+    
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
@@ -173,15 +178,17 @@ aside{
     flex-direction: column;
     align-items: flex-end;
     margin-top: 126px;
+   
+    
 }
 
-aside form{
+aside div.campoBusca{
     display: flex;
     justify-content: right;
     gap: 15px;
 }
 
-aside form input{
+aside div.campoBusca input{
     width: 256px;
     height: 50px;
     font-size: 14px;
@@ -190,14 +197,14 @@ aside form input{
     font-weight: bold;
     
 }
-aside form input:focus{
+aside div.campoBusca input:focus{
     background-color: #F2CDC4;
     color:#0D0D0D;
     font-weight: bold;
     
 }
 
-aside form button {
+aside div.campoBusca button {
     width: 100px;
     height: 50px;
     font-size: 16px;
@@ -206,7 +213,7 @@ aside form button {
     color: #D94436;
 }
 
-aside form button:hover {
+aside div.campoBusca button:hover {
     width: 100px;
     height: 50px;
     font-size: 16px;
@@ -240,7 +247,7 @@ aside section .carrinhoCompra{
 
 
 
-section ul li.cardCarrinhoCompra{
+section ul.cardCarrinhoCompra li{
     padding: 10px;
     display: flex;
     gap: 30px;
@@ -249,7 +256,7 @@ section ul li.cardCarrinhoCompra{
 
 
 
-section ul li.cardCarrinhoCompra figure{
+section ul.cardCarrinhoCompra li figure{
     display: flex;
     justify-content: center;
     width: 128px;
