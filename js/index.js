@@ -146,7 +146,7 @@ function busca(valorBusca) {
     let retorno = []
     for (let i = 0; i < data.length; i++){
 
-        let busca = valorBusca.toLowerCase()
+        let busca = valorBusca.toLowerCase().trim()
         let nomeProduto = data[i].nameItem.toLocaleLowerCase()   
         let categoria = data[i].categoria.toLocaleLowerCase()            
 
