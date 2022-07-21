@@ -104,6 +104,17 @@ sectionDecoracao.addEventListener('click', function () {
     }
     listagemVitrine(arrRetorno)
 })
+// --------------------------------------
+//             ||ILUMINAÇÃO||
+//       ||Modo Noturno--Modo Dia||
+// --------------------------------------
+
+let iluminação = document.querySelector('header nav li img')
+
+iluminação.addEventListener('click', function () {
+    document.querySelector('body').classList.toggle('lightOff')
+})
+
 
 
 // --------------------------------------
@@ -175,6 +186,30 @@ function interceptandoIdProduto(evento) {
 
 let ulCompras = document.querySelector('.cardCarrinhoCompra')
 
+// condição para quando o carrinho estiver vazio
+if (ulCompras !== undefined) {
+    let div = document.createElement('div')
+    let h3  = document.createElement('h3')
+    let img = document.createElement('img')
+    let p = document.createElement('p')
+    
+    div.classList.add('carrinhoNull')
+    h3.classList.add('carrinhoVazio')
+    p.classList.add('carrinhoVazioAdicionarItens')
+    
+    h3.innerText = 'Carrinho Vazio'
+    img.src      = 'img/carrinhoVazio.png'
+    p.innerText  = 'Adicione itens'
+   
+    div.append(h3 , img , p)
+    ulCompras.appendChild(div)
+
+    
+
+}
+
+
+
 function addCarinhoCompra(arrProduto) {
           
        
@@ -190,12 +225,14 @@ function addCarinhoCompra(arrProduto) {
         let p = document.createElement('p')
         let button = document.createElement('button')
 
+        li.setAttribute('id',i)
         li.classList.add('cardCarrinhoCompra')
         img.src = arrProduto[i].img
         h5.innerText = arrProduto[i].nameItem
         p.innerText = arrProduto[i].value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
         button.innerText = 'Remover produto'
         button.setAttribute('id', arrProduto[i].id)
+        
 
         figure.appendChild(img)
         div.appendChild(h5)
@@ -209,46 +246,39 @@ function addCarinhoCompra(arrProduto) {
      
 }
 
-// --------------------------------------
-//       ||remover do carrinho||
-// ---------------------------------------
-
-ulCompras.addEventListener('click', function () {
-    console.log(arrCarrinho.indexOf()) 
-})
-
-
-// function removerCarrinho(evento) {
-
-//     let remove = evento.target.closest('li')
-//     console.log(arrCarrinho.indexOf())    
-//     arr
-    
-//     // arrCarrinho.splice(arrCarrinho.indexOf(remove), 1)
-    
-//     addCarinhoCompra(arrCarrinho)
-// }
-
-
-
 
 // --------------------------------------
 //   ||área de somar quantidade e valor||
 // ---------------------------------------
 
-let divTotal        = document.querySelector('.total')
-
+let divTotal          = document.querySelector('.total')
+let ul                = document.createElement('ul')
+let liQuantidades     = document.createElement('li')
+let liTotal           = document.createElement('li')
 let pQuantidade       = document.createElement('p')
+let pQuantidadeItens  = document.createElement('p')
+let pTextTotal        = document.createElement('p')
 let pTotal            = document.createElement('p')
 
-pQuantidade.classList.add('quantidadeItens')
+pQuantidade.classList.add('quantidade')
+pQuantidadeItens.classList.add('quantidadeItens')
+pTextTotal.classList.add('textTotal')
 pTotal.classList.add('totalValor')
 
-divTotal.appendChild(pQuantidade)
-divTotal.appendChild(pTotal)
+pQuantidade.innerText = 'Quantidades:'
+pTextTotal.innerText  = 'Total:' 
+
+divTotal.appendChild(ul)
+ul.append(liQuantidades , liTotal)
+liQuantidades.append(pQuantidade , pQuantidadeItens)
+liTotal.append(pTextTotal , pTotal)
+
+
 
 function quantidadeItens(arrCarrinho) {
     
+    divTotal.classList.remove('hidden')
+
     let quantidadeItens = document.querySelector('.quantidadeItens')  
     
     contador = 0
@@ -268,8 +298,54 @@ function soma(arrCarrinho){
         total = arrCarrinho[i].value + total
 
     }
+    // condição para mostrar o carrinho vazio    
+    if (total == 0){
+        divTotal.classList.add('hidden')
+        let div = document.createElement('div')
+        let h3  = document.createElement('h3')
+        let img = document.createElement('img')
+        let p = document.createElement('p')
+    
+        div.classList.add('carrinhoNull')
+        h3.classList.add('carrinhoVazio')
+        p.classList.add('carrinhoVazioAdicionarItens')
+    
+        h3.innerText = 'Carrinho Vazio'
+        img.src      = 'img/carrinhoVazio.png'
+        p.innerText  = 'Adicione itens'
+   
+        div.append(h3 , img , p)
+        ulCompras.appendChild(div)
+        
+        // ulCompras.innerHTML = `<p class="carrinhoVazio">Carrinho Vazio</p>`
+    }
 
     document.querySelector(".totalValor").innerText = total.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL' })
 
 }
+
+
+// --------------------------------------
+//       ||remover do carrinho||
+// ---------------------------------------
+
+ulCompras.addEventListener('click', removerCarrinho)
+
+
+function removerCarrinho(evento) {
+
+  
+    let remove = evento.target
+    if(remove.tagName == 'BUTTON'){
+       
+        remove = evento.target.closest('li')
+
+        arrCarrinho.splice(remove.id, 1)
+
+        addCarinhoCompra(arrCarrinho)
+        quantidadeItens(arrCarrinho)
+        soma(arrCarrinho)
+    }
+}
+
 

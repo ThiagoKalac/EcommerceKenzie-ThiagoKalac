@@ -4,9 +4,6 @@ body.lightOff{
     background-color:#0d0d0df0;
 }
 
-
-
-
 header.cabecalho{
     width: 100%;
     height: 90px;
@@ -57,8 +54,19 @@ header.cabecalho nav ul li:hover{
 header.cabecalho nav ul li.todos{
     font-weight: bold;
 }
+/* modo iluminação */
+.modoNoturno{
+    display: flex;
+    width: 38px;
+    height: 36px;
+}
+
+.modoNoturno:hover{
+    filter: invert(1);
+}
 
 
+/* ----------------- */
 .container{
     display: flex;
     justify-items: end;
@@ -73,7 +81,7 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 25px;
-  
+    width:1000px;
     
 }
 
@@ -83,6 +91,16 @@ main ul{
     flex-wrap: wrap;
     gap: 25px;
 }
+
+/* main ul li.card{
+    width: 296px;
+    height: 408px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    overflow: hidden;    
+} */
 
 main ul li.card{
     width: 296px;
@@ -189,7 +207,7 @@ aside div.campoBusca{
 }
 
 aside div.campoBusca input{
-    width: 256px;
+    width: 321px;
     height: 50px;
     font-size: 14px;
     font-weight: 400;
@@ -205,7 +223,7 @@ aside div.campoBusca input:focus{
 }
 
 aside div.campoBusca button {
-    width: 100px;
+    width: 142px;
     height: 50px;
     font-size: 16px;
     font-weight: 500;
@@ -214,8 +232,6 @@ aside div.campoBusca button {
 }
 
 aside div.campoBusca button:hover {
-    width: 100px;
-    height: 50px;
     font-size: 16px;
     font-weight: 600;
     background-color: #D94436;
@@ -229,7 +245,7 @@ aside section h4{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 370px;
+    width: 478px;
     height: 50px;
     text-align: center;
     color: #f1eeee;
@@ -239,7 +255,7 @@ aside section h4{
 }
 
 aside section .carrinhoCompra{
-    width: 370px;
+    width: 477px;
     height: 329px;
     background-color: #f1eeee;
     overflow-y: auto;
@@ -259,8 +275,8 @@ section ul.cardCarrinhoCompra li{
 section ul.cardCarrinhoCompra li figure{
     display: flex;
     justify-content: center;
-    width: 128px;
-    height: 114px;
+    width: 291px;
+    height: 159px;
     overflow: hidden;
 }
 
@@ -298,8 +314,13 @@ section ul li.cardCarrinhoCompra div button:hover{
     text-decoration: underline;
 }
 
+aside .hidden{
+    display: none;
+}
+
+
 aside .total{
-    width: 370px;
+    width: 478px;
     height: 110px;
     background-color: #591B1B;
     
@@ -332,3 +353,35 @@ aside .total ul li p.quantidadeItens, p.totalValor{
     font-weight: 400;
     font-size: 16px;
 }
+
+
+
+div.carrinhoNull{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 258px;
+    flex-direction: column;
+    
+}
+
+
+div.carrinhoNull h3.carrinhoVazio{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+div.carrinhoNull img{
+    width: 109px;
+    height: 102px;
+    padding: 10px;
+}
+
+
+p.carrinhoVazioAdicionarItens{
+    font-size: 18px;
+    font-weight: 500;
+}
+
