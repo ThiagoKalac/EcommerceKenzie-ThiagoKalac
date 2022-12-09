@@ -1,4 +1,4 @@
-# Entrega Construindo um E-commerce - parte 1
+# Entrega Construindo um E-commerce
 
 ## Introdução
 
@@ -30,20 +30,6 @@ outros.
 
 ## A Estilização
 
-Cobraremos que seja seguido, pelo menos, o style guide mas você é livre
-para aprimorar como quiser. Você pode adicionar ícones, hover, etc.
-
-# Passo a Passo
-
-### 2 - O que faremos na parte 1
-
-Nessa primeira parte do seu projeto, iremos focar na estilização e
-construção da aplicação, ou seja, iremos apenas mexer inicialmente no
-HTML, construção das tags semânticas seus locais apropriados, imagens e
-distribuição de conteúdo, como foi visto durante o curso e na
-estilização com o CSS, ou seja, \"embelezamento\" da aplicação, iremos
-trazer toda a parte de fonts, cores e posicionamento nesse momento,
-tentando nos aproximar ao máximo do que está no figma.
 
 - **Header** → Com sua logo tipo, e seus botões de navegação,
   configurados como demostrado no figma, apenas visual sem
@@ -65,19 +51,7 @@ tentando nos aproximar ao máximo do que está no figma.
 1.  Precisa estar publicado em uma url no gitHubPages
 2.  Deve haver branchs de desenvolvimento com nomes apropriados
 
-**Dica!**
-
-Que tal ficar marcado na história esse trabalho? pelos desafios, pelo
-aprendizado e claro por todo o caminho que teve que andar para chegar
-até esse momento, tendo isso em vista! Que tal **compartilhar** nas
-redes sociais?
-
-Um belo projeto para ficar de **portefólio** no seu **LinkedIn**, ou
-quem sabe enfeitar por um longo tempo a sua página do **Instagram**!
-Vamos lá, mostre a todos para que veio, mostre aos outros o seu
-crescimento e a diversão que está tendo com cada projeto!
-
-# Passo a Passo - Parte 2
+# Parte 2
 
 ### 1 - O que faremos na parte 2
 
@@ -94,8 +68,6 @@ específicas como demostrado abaixo.
 - **Carrinho de compras** → Deverá ser possível adicionar e remover
   produtos do carrinho por meio do DOM
 - Estilização e alinhamento como demostrado no figma
-
-### Bônus
 
 **Importante!**
 
@@ -122,22 +94,8 @@ que for escrito na barra de pesquisa
 2.  Caso digite **Shirt**, deve demostrar apenas os produtos que tenham
     no **nome Shirt** na vitrine
 
-**Importante!**
 
-1.  Precisa estar publicado em uma url no gitHubPages
-2.  Deve haver branchs de desenvolvimento com nomes apropriados
 
-**Dica!**
-
-Que tal ficar marcado na história esse trabalho? pelos desafios, pelo
-aprendizado e claro por todo o caminho que teve que andar para chegar
-até esse momento, tendo isso em vista! Que tal **compartilhar** nas
-redes sociais?
-
-Um belo projeto para ficar de **portefólio** no seu **LinkedIn**, ou
-quem sabe enfeitar por um longo tempo a sua página do **Instagram**!
-Vamos lá, mostre a todos para que veio, mostre aos outros o seu
-crescimento e a diversão que está tendo com cada projeto!
 
 **Referências!**
 
@@ -155,11 +113,4 @@ crescimento e a diversão que está tendo com cada projeto!
 - [event listener em
   inglês](https://devdojo.com/bo-iliev/dom-event-listeners)
 
-### 3 --- Envio
 
-Faça o push do código para o seu repositório GitHub, altere a
-visibilidade do repositório para internal e implemente-o GitHub pages.
-No Canvas, por favor, envie sua url do GitHub Pages:
-(ex:https://nomerandomico.pages.github.io/) e envie o link do seu
-repositório nos comentários. Atenção, seu repositório deverá ser
-compartilhado apenas com a organização. (Internal)
